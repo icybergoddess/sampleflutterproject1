@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:myfirstproject/ListViewConstructor.dart';
 import 'package:myfirstproject/login_with_validation.dart';
 import 'package:myfirstproject/login_design.dart';
 
@@ -23,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(const Duration(seconds: 6), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => LoginForm()));
+          context, MaterialPageRoute(builder: (context) => ListPage()));
     });
   }
 
@@ -53,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 150,
               ),
               Text(
-                "Be Positive..!!",
+                "Pet Store!!",
                 style: TextStyle(fontSize: 20, color: Colors.white),
               )
             ],
